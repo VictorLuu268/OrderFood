@@ -10,6 +10,4 @@ OrderFood is a small application for managing tables, menus, food and staff. Usi
 * Status of table
 * Multilanguage(English-Vietnamese)
 
----
-## Screenshots
 
