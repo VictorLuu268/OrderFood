@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/itemInsertDinTable"
+        android:title="@string/insert_dintable"></item>
+
+    <item android:id="@+id/itemInsertMenuFood"
+        android:title="@string/insert_menufood"></item>
+
+    <item android:id="@+id/itemInsertEmployee"
+        android:title="@string/insert_employee"></item>
+
+</menu>

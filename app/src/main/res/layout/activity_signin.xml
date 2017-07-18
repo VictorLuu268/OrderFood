@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="16dp"
+    android:background="@color/colorWhite"
+    tools:context="com.victor.orderfood.SignInActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:layout_above="@+id/ln_FormSignIn"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorRed_Pomegranate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/ln_FormSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true">
+        
+        <EditText
+            android:id="@+id/et_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_red_edittext"
+            android:hint="@string/user_name"
+            android:textColorHint="@color/colorGray"
+            android:padding="8dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:textColor="@color/colorDark"
+            android:maxLines="1"/>
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_red_edittext"
+            android:hint="@string/pass_word"
+            android:textColorHint="@color/colorGray"
+            android:padding="8dp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorDark"
+            android:maxLines="1"/>
+
+        <RadioGroup
+            android:id="@+id/rg_Genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rdio_Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:textColor="@color/colorRed_Pomegranate"
+                android:checked="true"
+                android:buttonTint="@color/colorRed_Pomegranate"
+                android:textSize="20sp"
+                />
+            <RadioButton
+                android:id="@+id/rdio_Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:textColor="@color/colorRed_Pomegranate"
+                android:buttonTint="@color/colorRed_Pomegranate"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/rlayout_rule"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_spinner"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spin_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dropdown"
+                >
+            </Spinner>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/drop" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_red_edittext"
+            android:hint="@string/birthday"
+            android:textColorHint="@color/colorGray"
+            android:padding="8dp"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorDark"/>
+
+        <EditText
+            android:id="@+id/et_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_red_edittext"
+            android:hint="@string/phone_number"
+            android:textColorHint="@color/colorGray"
+            android:padding="8dp"
+            android:inputType="number"
+            android:drawableLeft="@drawable/idcard"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="10dp"
+            android:maxLength="8"
+            android:textColor="@color/colorDark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@color/colorBlue_Cerulean"/>
+
+            <Button
+                android:id="@+id/bt_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exit"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorRed_Pomegranate"
+                android:background="@drawable/rounded_black_edittext"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

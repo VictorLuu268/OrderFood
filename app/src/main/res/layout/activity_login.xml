@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/colorRed_Pomegranate">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/bt_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/us"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/bt_vi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/vi"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/log_in"
+        android:layout_above="@+id/ln_FormLogIn"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/ln_FormLogIn"
+        android:src="@drawable/logodangnhap"
+        android:layout_marginTop="60dp"/>
+
+    <LinearLayout
+        android:id="@+id/ln_FormLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/et_usernameLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name"
+            android:textColorHint="@color/colorGray"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorDark"
+            android:background="@color/colorWhite"
+            android:text="admin"
+            android:maxLines="1"/>
+
+        <EditText
+            android:text="1234"
+            android:id="@+id/et_passwordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pass_word"
+            android:textColorHint="@color/colorGray"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/password"
+            android:inputType="textPassword"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorDark"
+            android:background="@color/colorWhite"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/bt_loginLogin"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in"
+            android:background="@color/colorBlue_Cerulean"/>
+
+        <Button
+            android:id="@+id/bt_signinLogin"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:background="@color/colorPrimary"/>
+    
+    </LinearLayout>
+
+</RelativeLayout>

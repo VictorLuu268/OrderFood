@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreen_Apple">
+
+    <TextView
+        android:id="@+id/tv_food_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insert_menufood"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:id="@+id/imgView_food"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:src="@drawable/addimage"/>
+
+    <EditText
+        android:id="@+id/et_insert_foodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="@string/food_name"
+        android:textColor="@color/colorDark"
+        android:textColorHint="@color/colorGray"/>
+
+    <EditText
+        android:id="@+id/et_insert_foodPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="@string/food_price"
+        android:inputType="number"
+        android:textColor="@color/colorDark"
+        android:textColorHint="@color/colorGray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spin_menuTypeFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:spinnerMode="dropdown">
+        </Spinner>
+
+        <ImageButton
+            android:id="@+id/bt_addTypeFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_input_add"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_insertFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/bt_exitFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textColor="@color/colorDark"
+            android:background="@color/colorWhite"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
